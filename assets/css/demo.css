@@ -432,3 +432,21 @@
 .section-images{
     padding-bottom: 0;
 }
+
+.footer .social-buttons a,
+.footer .social-buttons .btn {
+    margin: 0;
+}
+
+ .footer nav {
+        display: block;
+        float: none;
+    }
+    #social-buttons>.row .col-md-1:nth-child(2) p,
+    #social-buttons>.row .col-md-1:nth-child(3) p,
+    #social-buttons>.row .col-md-3 p {
+        display: none;
+    }
+}
+
+
