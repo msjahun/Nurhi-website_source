@@ -375,9 +375,10 @@ nowuiKit = {
     }, 6),
 
     initContactUsMap: function() {
-        var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+        var myLatlng = new google.maps.LatLng(11.9533151,8.5511143);
+        var myLatlng2 = new google.maps.LatLng(12.9533151,9.5511143);
         var mapOptions = {
-            zoom: 13,
+            zoom: 15,
             center: myLatlng,
             scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
             styles: [{
@@ -502,18 +503,24 @@ nowuiKit = {
 
         var marker = new google.maps.Marker({
             position: myLatlng,
-            title: "Hello World!"
+            title: "Kano Office"
+        });
+        var marker2 = new google.maps.Marker({
+            position: myLatlng2,
+            title: "Alternate Kano Office"
         });
 
         // To add the marker to the map, call setMap();
         marker.setMap(map);
+       // marker2.setMap(map);
     },
 
 
     initContactUs2Map: function() {
-        var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+        var myLatlng = new google.maps.LatLng(11.9533151,8.5511143);
+        var myLatlng2 = new google.maps.LatLng(40.748817, -73.985428);
         var mapOptions = {
-            zoom: 13,
+            zoom: 15,
             center: myLatlng,
             scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
             styles: [{
@@ -638,11 +645,15 @@ nowuiKit = {
 
         var marker = new google.maps.Marker({
             position: myLatlng,
-            title: "Hello World!"
+            title: "Kano Office"
+        });    var marker2 = new google.maps.Marker({
+            position: myLatlng,
+            title: "Jigawa Office"
         });
 
         // To add the marker to the map, call setMap();
         marker.setMap(map);
+       // marker2.setMap(map);
     }
 }
 
